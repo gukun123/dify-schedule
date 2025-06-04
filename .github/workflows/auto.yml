@@ -2,7 +2,7 @@ name: Auto
 
 on:
   schedule:
-    - cron: "0 8 * * *" # 北京时间上午08:00
+    - cron: "20 8 * * *" # 北京时间上午08:20
   workflow_dispatch:
 
 env:
@@ -16,7 +16,7 @@ env:
   PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
   WEIXIN_WEBHOOK: ${{ secrets.WEIXIN_WEBHOOK }}
   SERVERPUSHKEY: ${{ secrets.SERVERPUSHKEY }}
-  FEISHU_WEBHOOK: ${{ https://open.feishu.cn/open-apis/bot/v2/hook/9985b421-dd8e-4550-84e3-765bfdeb2ac5 }}
+  FEISHU_WEBHOOK: ${{ Feishu bot webhook }}
   AIBOTK_KEY: ${{ secrets.AIBOTK_KEY }}
   AIBOTK_ROOM_RECIVER: ${{ secrets.AIBOTK_ROOM_RECIVER }}
   AIBOTK_CONTACT_RECIVER: ${{ secrets.AIBOTK_CONTACT_RECIVER }}
